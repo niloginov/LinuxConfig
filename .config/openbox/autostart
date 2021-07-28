@@ -1,0 +1,12 @@
+tint2 &
+nitrogen --restore &
+picom &
+# redshift -P -O 3200 &
+ibus-daemon -drx &
+
+
+#Used to set up trackpoint on Lenovo TrackPoint Keyboard II.
+xinput --list --name-only | grep -q "TrackPoint" && key="Lenovo TrackPoint Keyboard II Mouse" &&
+	xinput set-prop "$key" "Device Accel Constant Deceleration" 0.21 &&
+	xinput set-prop "$key" "Device Accel Adaptive Deceleration" 12 &&
+	xinput set-prop "$key" "Evdev Scrolling Distance" 0.25, 8, 15 &

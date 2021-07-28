@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/nikita/Documents/MiscDocs/ArchSupport'
+let g:netrw_dirhist_2='/home/nikita/Documents/MiscDocs'
+let g:netrw_dirhist_1='/home/nikita/Documents'
+let g:netrw_dirhist_0='/home/nikita/Documents/USC_Files'
+let g:netrw_dirhist_9='/home/nikita/Documents'
+let g:netrw_dirhist_8='/home/nikita'
+let g:netrw_dirhist_7='/home/nikita/Documents'
+let g:netrw_dirhist_6='/home/nikita/Documents/Docs'
+let g:netrw_dirhist_5='/home/nikita/Documents'
+let g:netrw_dirhist_4='/home/nikita/.urxvt'
