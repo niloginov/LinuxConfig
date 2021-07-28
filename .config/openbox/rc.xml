@@ -178,84 +178,92 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <!-- Window movement -->
-    <keybind key="W-S-w">
-      <action name="MoveResizeTo">
+
+    <!-- Full screen -->
+    <keybind key="w-s-w">
+      <action name="moveresizeto">
         <x>center</x>
         <y>center</y>
         <width client="yes">100%</width>
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-S-s">
-      <action name="Iconify"/>
+    <!-- Iconify ,unmaximize, close -->
+    <keybind key="w-s-s">
+      <action name="iconify"/>
     </keybind>
-    <keybind key="W-S-e">
-      <action name="Unmaximize"/>
+    <keybind key="w-s-e">
+      <action name="unmaximize"/>
     </keybind>
-    <keybind key="W-S-q">
-      <action name="Close"/>
+    <keybind key="w-s-q">
+      <action name="close"/>
     </keybind>
-    <!-- move the window to the first monitor -->
-    <keybind key="W-1">
-      <action name="MoveResizeTo">
+    <!-- move window to other monitor -->
+    <keybind key="w-1">
+      <action name="moveresizeto">
         <monitor>1</monitor>
       </action>
     </keybind>
-    <!-- move the window to the second monitor -->
-    <keybind key="W-2">
-      <action name="MoveResizeTo">
+    <keybind key="w-2">
+      <action name="moveresizeto">
         <monitor>2</monitor>
       </action>
     </keybind>
-    <keybind key="W-q">
-      <action name="MoveResizeTo">
+    <!-- window takes left half -->
+    <keybind key="w-q">
+      <action name="moveresizeto">
         <x>0</x>
         <y>center</y>
         <width client="yes">50%</width>
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-w">
-      <action name="MoveResizeTo">
+    <!-- window takes left top quarter -->
+    <keybind key="w-w">
+      <action name="moveresizeto">
         <x>0</x>
         <y>0</y>
         <width client="yes">50%</width>
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-s">
-      <action name="MoveResizeTo">
+    <!-- window takes left bottom quarter -->
+    <keybind key="w-s">
+      <action name="moveresizeto">
         <x>0</x>
         <y>-0</y>
         <width client="yes">50%</width>
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-r">
-      <action name="MoveResizeTo">
+    <!-- window takes right half -->
+    <keybind key="w-r">
+      <action name="moveresizeto">
         <x>-0</x>
         <y>center</y>
         <width client="yes">50%</width>
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-e">
-      <action name="MoveResizeTo">
+    <!-- window takes right top  quarter -->
+    <keybind key="w-e">
+      <action name="moveresizeto">
         <x>-0</x>
         <y>0</y>
         <width client="yes">50%</width>
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-d">
-      <action name="MoveResizeTo">
+    <!-- window takes right bottom quarter -->
+    <keybind key="w-d">
+      <action name="moveresizeto">
         <x>-0</x>
         <y>-0</y>
         <width client="yes">50%</width>
         <height>50%</height>
       </action>
     </keybind>
+
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
