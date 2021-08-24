@@ -1,0 +1,14 @@
+#!/bin/bash
+bright=/sys/class/backlight/intel_backlight/brightness
+last_state=/etc/acpi/handlers/lastScreenState
+
+[ "$(cat $bright)" != "0" ] && ( echo "$(cat $bright)" > $last_state && echo "0" > $bright && logger 'Screen turned off') || ( echo "$(cat $last_state)" > $bright && logger 'Screen turned on' )
+
+#if [ "$(cat $bright)" != "0" ]; then
+#	echo "$(cat $bright)" > $last_state && echo "0" > $bright && echo "The screen is off now"
+#
+#else
+#	echo "$(cat $last_state)" > $bright && echo "The screen is set to $(cat $last_state) now"
+#fi
+
+#[ "$(cat $bright)" = "0" ] && echo "$(cat $last_state)" > $bright && echo "The screen is set to $(cat $last_state) now"
